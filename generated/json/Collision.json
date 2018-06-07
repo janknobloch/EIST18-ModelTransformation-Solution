@@ -1,0 +1,10 @@
+{
+  "Collision" : {
+    "winningCar" : {
+      "iconUrl" : "winner.png"
+    },
+    "loosingCar" : {
+      "iconUrl" : "looser.png"
+    }
+  }
+}
