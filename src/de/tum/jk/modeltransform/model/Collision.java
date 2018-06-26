@@ -1,4 +1,4 @@
-package de.tum.eist.model;
+package de.tum.jk.modeltransform.model;
 
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 

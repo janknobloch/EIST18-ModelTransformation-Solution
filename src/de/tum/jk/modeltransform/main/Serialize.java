@@ -1,4 +1,4 @@
-package de.tum.eist.main;
+package de.tum.jk.modeltransform.main;
 
 import java.io.File;
 import java.io.IOException;
@@ -10,8 +10,8 @@ import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 
-import de.tum.eist.model.Car;
-import de.tum.eist.model.Collision;
+import de.tum.jk.modeltransform.model.Car;
+import de.tum.jk.modeltransform.model.Collision;
 
 public class Serialize {
 

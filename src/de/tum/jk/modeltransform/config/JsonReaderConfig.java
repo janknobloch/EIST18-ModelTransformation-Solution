@@ -1,4 +1,4 @@
-package de.tum.eist.config;
+package de.tum.jk.modeltransform.config;
 
 import org.jsonschema2pojo.DefaultGenerationConfig;
 import org.jsonschema2pojo.SourceType;

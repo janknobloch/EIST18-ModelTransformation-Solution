@@ -1,4 +1,4 @@
-package de.tum.eist.main;
+package de.tum.jk.modeltransform.main;
 
 import java.io.File;
 import java.io.IOException;
@@ -18,9 +18,9 @@ import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.sun.codemodel.JCodeModel;
 
-import de.tum.eist.config.JsonReaderConfig;
-import de.tum.eist.model.Car;
-import de.tum.eist.model.Collision;
+import de.tum.jk.modeltransform.config.JsonReaderConfig;
+import de.tum.jk.modeltransform.model.Car;
+import de.tum.jk.modeltransform.model.Collision;
 
 public class Deserialize {
 
@@ -60,7 +60,8 @@ public class Deserialize {
 		GenerationConfig config = new JsonReaderConfig();
 
 		// create a schema mapper using our config and generator
-		SchemaMapper mapper = new SchemaMapper(new RuleFactory(config, new Jackson2Annotator(config), new SchemaStore()), new SchemaGenerator());
+		SchemaMapper mapper = new SchemaMapper(
+				new RuleFactory(config, new Jackson2Annotator(config), new SchemaStore()), new SchemaGenerator());
 
 		// generate the class model
 		mapper.generate(codeModel, type.getClass().getSimpleName(), "", source);
